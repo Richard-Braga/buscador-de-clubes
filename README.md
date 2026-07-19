@@ -2,6 +2,7 @@
 
 <p align="center">
 Atividade promovida pelo professor da Universidade Federal de Alagoas (UFAL) <a href="https://github.com/italocarlo06">Ítalo Carlo</a> para ensino de tecnologias WEB. <br/>
+</p>
 
 <p align="center">
   <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
@@ -36,7 +37,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 O **Buscador de Clubes** é uma aplicação WEB desenvolvida como atividade avaliativa para a disciplina PWEB proposta pelo professor **Italo Carlo** no **Instituto Federal de Alagoas**.
 
-O objetivo é consolidar conceitos de desenvolvimento web através do consumo da API públic **TheSportsDB**. A aplicação permite que o usuário possa pesquisar qualquer time de futebol pelo nome e receba um card contendo os dados institucionais (estádio, redes sociais, e etc).
+O objetivo é consolidar conceitos de desenvolvimento web através do consumo da API pública **TheSportsDB**. A aplicação permite que o usuário possa pesquisar qualquer time de futebol pelo nome e receba um card contendo os dados institucionais (estádio, redes sociais, e etc).
 
 ## Layout
 
