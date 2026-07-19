@@ -1,0 +1,258 @@
+/* Variáveis de cores para facilitar a customização */
+:root {
+  --primary-color: #2c3e50;
+  --secondary-color: #e74c3c;
+  --bg-color: #f4f7f6;
+  --card-bg: #ffffff;
+  --text-color: #333333;
+  --border-radius: 12px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: url(./assets/bgImg.png) no-repeat top center/cover;
+  background-attachment: fixed;
+  color: var(--text-color);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 40px 20px;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto 20px auto;
+}
+
+/* Estilos da Busca */
+.search-section {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.search-section h1 {
+  color: var(--primary-color);
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.search-section p {
+  color: var(--text-muted);
+  margin-bottom: 20px;
+}
+
+.search-box {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+#searchInput {
+  flex: 1;
+  padding: 15px;
+  font-size: 1rem;
+  border: 2px solid #ddd;
+  border-radius: var(--border-radius);
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+#searchInput:focus {
+  border-color: var(--primary-color);
+}
+
+#searchInput:hover {
+  transform: translateY(-2px);
+}
+
+#searchButton {
+  padding: 15px 25px;
+  background-color: var(--primary-color);
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition:
+    background-color 0.3s,
+    transform 0.1s;
+}
+
+#searchButton:hover {
+  background-color: #1a252f;
+  transform: translateY(-2px);
+}
+
+#searchButton:active {
+  transform: scale(0.98);
+}
+
+.status-message {
+  color: var(--secondary-color);
+  font-weight: bold;
+  height: 20px;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Estilos do Card do Time */
+.team-card {
+  background-color: var(--card-bg);
+  border-radius: var(--border-radius);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  transition: opacity 0.3s ease;
+}
+
+.team-header {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.logo-container {
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  border-radius: 50%;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#teamLogo {
+  max-width: 80%;
+  max-height: 80%;
+  object-fit: contain;
+}
+
+.title-container h2 {
+  font-size: 1.8rem;
+  margin-bottom: 8px;
+}
+
+.badge {
+  background-color: var(--secondary-color);
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgb(43, 43, 43);
+}
+
+.team-info {
+  padding: 30px;
+}
+
+.team-info h3 {
+  margin-bottom: 20px;
+  color: var(--primary-color);
+  border-bottom: 2px solid #f0f0f0;
+  padding-bottom: 10px;
+}
+
+.team-socials {
+  border-top: 2px solid #f0f0f0;
+  cursor: pointer;
+}
+
+.team-socials summary {
+  margin: 20px 0;
+  color: var(--primary-color);
+  gap: 5px;
+  outline: none;
+  list-style: none;
+  font-weight: bold;
+
+}
+
+.team-socials a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+.team-socials a:hover {
+  text-decoration: underline;
+  color: var(--secondary-color);
+}
+
+.info-list {
+  list-style: none;
+}
+
+.info-list li {
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+  gap: 1.1rem;
+  display: flex;
+  align-items: center;
+}
+
+.info-list li strong {
+  width: 130px;
+  color: var(--text-color);
+}
+
+.info-list ion-icon {
+  font-size: 2rem;
+}
+
+.error-message {
+  color: var(--secondary-color);
+  padding: 15px 20px;
+  border-radius: var(--border-radius);
+  text-align: center;
+  font-weight: bold;
+  font-size: 1rem;
+  max-width: 100%;
+}
+
+.footer {
+  margin-top: 40px;
+  padding: 20px 0;
+  text-align: center;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.footer p {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 480px) {
+  .team-header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .info-list li {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .info-list li strong {
+    margin-bottom: 5px;
+  }
+}
